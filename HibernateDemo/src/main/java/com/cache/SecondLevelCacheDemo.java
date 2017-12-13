@@ -22,7 +22,7 @@ public class SecondLevelCacheDemo {
 		s.close();
 		
 		Session s1 = sf.openSession();
-		Student sg = (Student)s1.get(Student.class, 1);
+		Student sg = (Student)s1.get(Student.class, 2);
 		System.out.println(sg);
 		Student sg1 = (Student)s1.get(Student.class, 0);
 		System.out.println(sg1);
