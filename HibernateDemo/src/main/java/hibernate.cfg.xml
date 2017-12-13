@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+
+<property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+<property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+<property name="connection.url">jdbc:hsqldb:hsql://localhost/</property>
+<property name="connection.username">SA</property>
+<property name="connection.password"></property>
+
+<property name="hbm2ddl.auto">validate</property>
+<property name="show_sql">true</property>
+<!-- <mapping class="com.inheritance.demo.Book"/>
+<mapping class="com.inheritance.demo.FictionBook"/> -->
+
+<!-- <property name="hibernate.cache.region.factory_class">true</property>
+<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+<property name="cache.use_second_level_cache">true</property>
+<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property> -->
+<mapping class="com.rap.com.demo.Student"/>
+<!-- <mapping class="com.queries.EmployeeName"/> -->
+<!-- <mapping class="com.queries.Client"/> -->
+<!-- <mapping resource= "hibernate.hbm.xml" /> -->
+
+</session-factory>
+</hibernate-configuration>
