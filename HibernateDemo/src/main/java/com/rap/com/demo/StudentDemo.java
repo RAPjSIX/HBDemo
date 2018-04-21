@@ -36,25 +36,22 @@ public class StudentDemo {
 		Student stud5 = new Student(6, "Sam", 85);
 	//	s.save(stud6);
 	
-		Student stud7 = new Student(8, "wolf", 5);
+		Student stud7 = new Student(1, "wolf", 15);
 		s.save(stud7);
 		s.flush();
+		s.save(stud4);
 		
 		s.close();
-
+/*
 		Session sn = sf.openSession();
 		Transaction tn = sn.beginTransaction();
 		Student s2 = (Student) sn.get(Student.class, 1);
-		// s2.setStudentMarks(25);
-		//sn.update(s1);
-		//sn.save(stud6);
+		s2.setStudentMarks(25);
+		sn.update(s1);
+		sn.save(stud6);
 		tn.commit();
 		
-		Student stud8 = new Student(9, "olf", 15);
-		sn.save(stud8);
-		sn.flush();
-		
-		sn.close();
+		sn.close();*/
 		sf.close();
 		System.out.println("data updated succefully............");
 	}

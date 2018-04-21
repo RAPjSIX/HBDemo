@@ -11,7 +11,7 @@
 <property name="connection.username">SA</property>
 <property name="connection.password"></property>
 
-<property name="hbm2ddl.auto">validate</property>
+<property name="hbm2ddl.auto">create</property>
 <property name="show_sql">true</property>
 <!-- <mapping class="com.inheritance.demo.Book"/>
 <mapping class="com.inheritance.demo.FictionBook"/> -->
